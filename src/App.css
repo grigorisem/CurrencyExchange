@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+
+*{
+	box-sizing: border-box;
+	font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #2C2D35;
+  overflow-y: hidden;
+}
+.content {
+  background-image: url('./assets/img/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: #ffffff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.converter-container {
+  width: 100%;
+  height: 100vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
+  width: 100%;
+  height: 100%;
+}
+header {
+  max-height: 50px;
+  height: 50px;
+  width: 100%;
+  background: #1d0952;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+.header-inner {
+  width: calc(100% - 60px);
+  height: 50px;
+  margin: auto;
+  display: flex;
+}
+select, option {
+  font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", "Arial", sans-serif;
+  font-size: 18px;
+  padding: 5px 10px;
+  background: none;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  padding-left: 10px;
+}
+
+select {
+  color: #fff;
+}
+
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.company-name {
+  width: 150px;
+  height: 50px;
+  color: #f0f0f0;
+  align-content: center;
+}
+
+.form {
+  max-width: 480px;
+  width: calc(100% - 40px);
+  height: 100vh;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.form-inner {
+  max-width: 480px;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;  
+  border-radius: 25px;
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  outline: none;
+  backdrop-filter: blur(30px);
+  position: relative;
+}
+.form-inner p{
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    color: #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+    align-content: center;
+}
+#fromFlag, #toFlag {
+  max-width: 75px;
+  max-height: 50px;
+  align-content: center;
+}
+.from, .to {
+  width: 400px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between; 
+}
+
+input {
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  padding-left: 10px;
+  background: none;
+  color: #fff;
 }
